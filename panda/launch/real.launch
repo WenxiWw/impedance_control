@@ -1,0 +1,5 @@
+<launch>
+    <arg name="task" />
+    <arg name="robot_ip" />
+    <node pkg="panda" name="panda_right" type="panda_node" args="$(arg task) $(arg robot_ip)" output="screen" />
+</launch>

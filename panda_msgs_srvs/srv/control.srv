@@ -1,0 +1,14 @@
+float64[7] q
+float64[7] dq
+float64[49] M
+float64[21] bJp
+float64[21] bJr
+float64[3] x_pos_EE
+float64[9] x_mat_EE
+float64 time
+float64[6] K_F_ext_hat_K
+float64[2] q_gripper
+float64[2] dq_gripper
+---
+float64[7] tau
+float64[2] tau_gripper

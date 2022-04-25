@@ -1,0 +1,7 @@
+<launch>
+    <arg name="task" />
+    <arg name="mujoco_path" />
+    <node pkg="panda" name="panda_sim" type="panda_node" args="$(arg task) sim $(arg mujoco_path)" output="screen" />
+    <node pkg="panda" name="logging_node_test" type="logging_node.py" output="screen" />
+    <node pkg="mujoco_ros" name="environment" type="mujoco_ros_node" args="$(arg mujoco_path)" output="screen" required="true" />
+</launch>
